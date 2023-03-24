@@ -1,0 +1,103 @@
+html {
+    background-color: #ffc482;
+    font-family: 'Playfair Display', serif;
+}
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+.cuerpo::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+
+.cuerpo {
+    border-radius: 20px;
+    color: #000000;
+    padding: 60px;
+}
+button {
+    text-align: center;
+    border-radius: 20px;
+    color: #000000;
+    margin: 10px;
+    background-color: #ffc482;
+}
+ul {
+    display: inline;
+}
+li {
+    list-style: none;
+}
+
+.col {
+    border-radius: 5%;
+    border: solid #fca559;
+    background-color: #fca559;
+    float: left;
+    margin: 5px;
+    padding: 9px;
+}
+.foto {width: 20%;}
+.nombre {width: 10%;}
+.contacto {width: 20%;}
+.otros_datos {width: 20%;}
+.experiencia {width: 60%;}
+.formacion {width: 60%;}
+
+.foto_perfil {
+    border-radius: 50%;
+}
+
+.foto {
+    border: none;
+    background-color: transparent; 
+    
+}
+
+.nombre {
+    border: none;
+    background-color: transparent; 
+
+}
+
+.contacto {
+    text-align: center;
+    word-wrap: break-word;
+    float:right; 
+    
+}
+
+.otros_datos {
+    float:right; 
+}
+
+
+
+
+#contacto {margin-top: 0px;}
+#lista {margin-bottom: 20px;}
+
+
+@media only screen and (max-width: 912px) {
+    [class*="col"] {width: 100%;}
+    .hidden_data {display: none;}
+    #hide1 {display: none;}
+    #hide2 {display: none;}
+    #hide3 {display: none;}
+}
+
+@media only screen and (min-width: 912px) {
+
+    button {display: none;}
+
+    .boton {visibility: hidden;}
+
+}
+
+
